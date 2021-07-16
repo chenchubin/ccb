@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+		}
+		.box1{
+			background-color: yellowgreen;
+		}
+		
+		/*//相对定位参照物:相对于它自已原来的位置,不脱离标准流，原来位置不会被其他元素占领*/
+		.box2{
+			background-color: skyblue;			
+			position: relative;				left: 100px;				top: 100px;
+			
+			
+		
+		}
+		.box3{
+			background-color: orange;
+		}
+	</style>
+</head>
+<body>
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+</body>
+</html>

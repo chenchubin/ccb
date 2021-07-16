@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/* 先全局再局部，从外到内，从上到下 
+			同一层级优先*/
+			*{
+				/* 清除默认边界 */
+				margin: 0;
+				padding: 0;
+			}
+			#box{
+				width: 970px;
+				height: 593px;
+				/* background-color: blue; */
+				margin: 0 auto;
+			}
+			#box #header{
+				height: 103px;
+				/* background-color: #FFC0CB; */
+				/* 下面边际 */
+				margin-bottom: 10px;
+			}
+			#box #header #logo{
+				height: 103px;
+				width: 277px;
+				background-color: red;
+				float: left;
+			}
+			#box #header #language{
+				height: 49px;
+				width: 137px;
+				background-color: greenyellow;
+				float: right;
+				margin-bottom: 8px;
+			}
+			#box #header #nav{
+				height: 46px;
+				width: 679px;
+				background-color: greenyellow;
+				float: right;
+			}
+			#box #content{
+				height: 435px;
+				/* background-color: greenyellow; */
+				margin-bottom: 10px;
+			/* 	margin-top: 10px; */
+			}
+			#box #content #banner{
+				height: 435px;
+				width: 310px;
+				background-color: orange;
+				float: left;
+				margin-right: 10px;
+			}
+			#box #content #rightPart{
+				height: 435;
+				width: 650;
+				float: left;
+				/* background-color: ; */
+			}
+			#box #content #rightPart #rightTop{
+				width: 650px;
+				height: 400px;
+				margin-bottom: 10px;
+			}
+			#box #content #rightPart #link{
+				width: 650px;
+				height: 25px;
+				background-color: green;
+			}
+			#box #content #rightPart #rightTop #news{
+				/* 有孩子给临时色 */
+				width: 450px;
+				height: 400px;
+				float: left;
+			}
+			#box #content #rightPart #rightTop #news #news1{
+				width: 450px;
+				height: 240px;
+				background-color: #0000FF;
+				/* 外边界 */
+				margin-bottom: 10px;
+			}
+			#box #content #rightPart #rightTop #news #news2{
+				width: 450px;
+				height: 110px;
+				background-color: #0000FF;
+				margin-bottom: 10px;
+			}
+			#box #content #rightPart #rightTop #news #news3{
+				width: 450px;
+				height: 30px;
+				background-color: #0000FF;
+			}
+			#box #content #rightPart #rightTop #hotPic{
+				width: 190px;
+				height: 400px;
+				background-color: purple;
+				/* 浮动 */
+				float: left;
+				margin-left: 10px;
+			}
+			#box #footer{
+				height: 35px;
+				background-color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<div id="header">
+				<div id="logo">logo</div>
+				<div id="language">language</div>
+				<div id="nav">nav</div>
+			</div>
+			<div id="content">
+				<div id="banner">banner</div>
+				<div id="rightPart">
+					<div id="rightTop">
+						<div id="news">
+							<div id="news1">news1</div>
+							<div id="news2">news2</div>
+							<div id="news3">news3</div>
+						</div>
+						<div id="hotPic">hotPic</div>
+					</div>
+					<div id="link">link</div>
+				</div>
+			</div>
+			<div id="footer"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<form action="#" method="post">
+			<input type="hidden"name="id"value="101"/>
+			<table border=1>
+				<tr>
+					<td>姓名：</td>
+					<td><input type="text" name="username"/></td>
+				</tr>
+				
+				<tr>
+					<td>密码：</td>
+					<td><input type="password" name="password"></td>
+				</tr>
+				
+				<tr>
+					<td>性别：</td>
+					<td><input type="radio" name="gender" value="male" checked="checked"/>男
+					    <input type="radio" name="gender" value="female"/>女
+				</tr>
+				
+				<tr>
+					<td>爱好：</td>
+					<td><input type="checkbox" name="hobby" value="basket"/>篮球
+					    <input type="checkbox" name="hobby" value="game"checked="checked"/>游戏
+						<input type="checkbox" name="hobby" value="music"/>音乐
+						<input type="checkbox" name="hobby" value="swimming"/>游泳</td>
+				</tr>
+				
+				<tr>
+					<td>城市：</td>
+					<td>
+						<select name="city">
+							<option value="bj">北京</option>
+							<option value="sh">上海</option>
+							<option value="gz" selected="selected">广州</option>
+							<option value="sz">深圳</option>
+						</select>
+						<select name="area">
+							<option value="th">天河</option>
+							<option value="hz">海珠</option>
+							<option value="yx">越秀</option>
+						</select>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>相片：</td>
+					<td><input type="file" name="photo" /></td>
+				</tr>
+				
+				<tr>
+					<td>简介：</td>
+					<td><textarea rows="5" cols="23" name="introduce"></textarea></td>
+				</tr>
+					
+				<tr>
+					<td colspan="2" align="center">
+						<input type="submit" value="注册"/>
+						<input type="reset" value="重置"/>
+						<input type="button" value="点击试试" onclick="alert('哈哈!');"/>
+						<input type="image" src="./images/btn.gif"/></td>
+				</tr>
+						
+			</table>
+		</form>
+			
+	</body>
+</html>
